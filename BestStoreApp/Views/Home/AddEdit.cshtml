@@ -1,0 +1,27 @@
+﻿
+@{
+	ViewData["Title"] = "Add/Edit Client";
+}
+@model BestStoreApp.Models.Clients
+<div class ="text-center">
+	<a class="btn btn-success">Add / Edit </a>
+</div>
+<div class=" container">
+	<form>
+		<label>Id</label>
+			<input class="form-control" type="number" placeholder=" 0" asp-for= "Id" />
+
+			<label >Name</label>
+			<input class=" form-control " type ="text " placeholder=" Type your Full Name" asp-for="Name" />
+			<label>Email</label>
+			<input class="form-control" type="email" placeholder=" Type Your Email Address" asp-for="Email"/>
+			<label>Phone</label>
+			<input class="form-control" type="tel" placeholder="Type your phone number" asp-for="Phone"/>
+			<label>Address</label>
+			<input class="form-control" type="text" placeholder=" Type Your Address" asp-for="Address"/>
+			<label>Created at</label>
+			<input class="form-control" type="datetime " placeholder=" Type date" asp-for ="Created_at"/>
+			<button class=" btn btn-primary mt-4" type="submit">Save </button>
+
+</form>
+</div>
